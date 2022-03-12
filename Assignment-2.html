@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Challenge: ID changer</title>
+        <style>
+            #card {
+                border:1px solid black;
+                border-radius:8px;
+                width: 250px;
+                font-family: monospace;
+                padding: 6px;
+                background: rgb(229, 151, 212);
+            }
+            #name {
+                float: left;
+            }
+        </style>
+    </head>
+    <body>
+        
+        
+            <h3 id="heading">Khan Academy identification card</h3>
+            <img src="https://www.kasandbox.org/programming-images/creatures/Winston.png">
+            <h1 id="name">First last</h1>
+            
+            
+        
+        
+    <script>
+     // document body
+     var headingEL= document.getElementById("heading");
+     console.log(headingEL);
+     headingEL.innerHTML="Safinaz";   
+    
+     // document body
+     var nameEL= document.getElementById("name");
+     console.log(nameEL);
+     nameEL.innerHTML="Mubarak"; 
+    </script>
+    </body>
+</html>
