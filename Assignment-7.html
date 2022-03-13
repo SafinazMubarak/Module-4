@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Challenge: Classification</title>
+        <style>
+        .right-answer {
+            background: rgb(228, 64, 214);
+        }
+        
+        .wrong-answer { 
+            background: rgb(0, 4, 237);
+        }
+        </style>
+    </head>
+    <body>
+        
+        <h2>Quiz: Universe Classification</h2>
+        
+        <p>Which planet do humans belong to?</p>
+        <ul id="answers">
+            <li>Mars</li>
+            <li>Jupiter</li>
+            <li>Earth</li>
+        </ul>
+        
+        <script>
+        var answers = document.querySelectorAll('#answers li');
+        var wrongAnswer1 = answers[0];
+        var wrongAnswer2 = answers[1];
+        var rightAnswer = answers[2];
+
+        wrongAnswer1.className = "wrong-answer"
+        wrongAnswer2.className = "wrong-answer"
+        rightAnswer.className = "right-answer"
+
+        </script>
+    </body>
+</html>
