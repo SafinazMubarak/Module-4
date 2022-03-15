@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Challenge: Cat Clicker</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;  
+            }
+            #cat-pic{ height: 200px;
+                width: 200px;
+              
+            }
+            #mustache-pic {
+				position: absolute;
+			}
+      
+        </style>
+    </head>
+    <body>
+     
+    
+    
+        <img id="cat-pic" src="https://i.pinimg.com/736x/17/61/cb/1761cbcffc03a7c887dc37bd58c58690.jpg" width="300" alt="cat photo">
+
+		<img id="mustache-pic" src="https://www.kasandbox.org/programming-images/misc/mustache.png" alt="mustache" width="100" >
+        
+        <script>
+         
+var catPic = document.getElementById("cat-pic");
+var onCatClick = function(e) {
+    var stashePic = document.getElementById("mustache-pic");  
+    stashePic.style.top = (e.clientY-20) +
+    "px";
+    stashePic.style.left = (e.clientX-45) +
+    "px";
+};
+catPic.addEventListener("click", onCatClick);
+  
+
+
+
+
+
+
+        </script>
+    </body>
+</html>
